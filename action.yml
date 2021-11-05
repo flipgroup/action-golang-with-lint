@@ -1,0 +1,22 @@
+name: Golang with golangci-lint linting
+
+inputs:
+  version-golang:
+    description: Golang version.
+    required: true
+  version-golangci-lint:
+    description: golangci-lint version.
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Golang
+      uses: actions/setup-go@v2
+      with:
+        go-version: ${{ inputs.version-golang }}
+    - name: Lint
+      uses: golangci/golangci-lint-action@v2
+      with:
+        skip-go-installation: true
+        version: ${{ inputs.version-golangci-lint }}
