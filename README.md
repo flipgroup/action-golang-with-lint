@@ -18,5 +18,5 @@ jobs:
         uses: flipgroup/action-golang-with-lint@main
         with:
           version-golang: ~1.17
-          version-golangci-lint: v1.44.0
+          version-golangci-lint: v1.44.2
 ```
