@@ -4,7 +4,7 @@ GitHub Action for setting up Golang via [actions/setup-go](https://github.com/ac
 
 At completion of Action, runner will be left with the desired Golang version, ready for running additional quality of life operations - such as `go test`.
 
-**Note:** internally, the [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) action provides caching of the Golang build/module cache directories - so no requirement to handle this within the composite action.
+**Note:** internally, [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) provides caching of the Golang build/module cache directories - so no requirement to handle this within the composite action.
 
 ## Usage
 
