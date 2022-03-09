@@ -12,11 +12,10 @@ runs:
   using: composite
   steps:
     - name: Setup Golang
-      uses: actions/setup-go@v2
+      uses: actions/setup-go@v3
       with:
         go-version: ${{ inputs.version-golang }}
     - name: Lint
-      uses: golangci/golangci-lint-action@v2
+      uses: golangci/golangci-lint-action@v3
       with:
-        skip-go-installation: true
         version: ${{ inputs.version-golangci-lint }}
