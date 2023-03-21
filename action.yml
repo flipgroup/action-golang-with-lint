@@ -13,8 +13,9 @@ runs:
   using: composite
   steps:
     - name: Setup Golang
-      uses: actions/setup-go@v3
+      uses: actions/setup-go@v4
       with:
+        cache: false
         go-version: ${{ inputs.version-golang }}
         go-version-file: ${{ inputs.version-golang-file }}
     - name: Lint
