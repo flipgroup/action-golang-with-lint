@@ -3,8 +3,10 @@ name: Golang with golangci-lint linting
 inputs:
   version-golang:
     description: Golang version.
+    default:
   version-golang-file:
     description: Golang version from go.mod. Used in place of `version-golang`.
+    default:
   version-golangci-lint:
     description: golangci-lint version.
     required: true
