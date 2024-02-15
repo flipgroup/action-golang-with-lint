@@ -15,12 +15,12 @@ runs:
   using: composite
   steps:
     - name: Setup Golang
-      uses: actions/setup-go@v4
+      uses: actions/setup-go@v5
       with:
         cache: false
         go-version: ${{ inputs.version-golang }}
         go-version-file: ${{ inputs.version-golang-file }}
     - name: Lint
-      uses: golangci/golangci-lint-action@v3
+      uses: golangci/golangci-lint-action@v4
       with:
         version: ${{ inputs.version-golangci-lint }}
