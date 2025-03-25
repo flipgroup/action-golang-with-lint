@@ -20,6 +20,6 @@ runs:
         version: ${{ inputs.version-golang }}
         version-file: ${{ inputs.version-golang-file }}
     - name: Lint
-      uses: golangci/golangci-lint-action@v6
+      uses: golangci/golangci-lint-action@v8
       with:
         version: ${{ inputs.version-golangci-lint }}
