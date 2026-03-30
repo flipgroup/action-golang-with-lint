@@ -19,6 +19,6 @@ jobs:
         with:
           version-golang-file: go.mod
           # alternatively, use `version-golang` input
-          #version-golang: ~1.24
-          version-golangci-lint: v2.2.1
+          #version-golang: ~1.26
+          version-golangci-lint: v2.11.4
 ```
